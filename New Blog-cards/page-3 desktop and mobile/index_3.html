@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="index_3.css" rel="stylesheet">
+
+<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+</head>
+<body>
+	<script>
+		$(document).ready(function () {
+				$("body").bind("touchstart", function() { /* nothing needed here, see http://stackoverflow.com/a/23012580 */ });
+				$(".fan li").hover(function() {
+					$(this).nextAll().each(function(i) {
+						$(this).addClass("after prefix_" + (i+1));
+					});
+					$(this).prevAll().each(function(i) {
+						$(this).addClass("before prefix_" + (i+1));
+					});
+				}, function() {
+					$(this).nextAll().each(function(i) {
+						$(this).removeClass("after prefix_" + (i+1));
+					});
+					$(this).prevAll().each(function(i) {
+						$(this).removeClass("before prefix_" + (i+1));
+					});
+				});
+				/* add the "flip" function */
+				$(".fan li").click(function(){
+					$(this).find(".card").addClass("flipped").mouseleave(function(){
+						$(this).removeClass("flipped");
+					});
+					return false;
+				});
+				/* set the card's data + bgcolor */
+				$(".face.front").each(function(){
+					$(this).css("background",$(this).data("bgcolor"));
+					$(this).html($(this).data("bgcolor"));
+				});
+				$("a[rel='external']").attr("target", "_blank");
+			});
+		</script>
+<!--
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Clients</a>
+    <a href="#">Contact</a>
+  </div>
+</div>
+<div class="menu>"
+<span style="font-size:30px;cursor:pointer;color:red;position:fixed;margin-top:10px;margin-left: 6px;z-index: 1" onclick="openNav()">&#9776; Menu</span>
+</div>
+<script>
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>-->
+<div>
+
+<ul class="fan">
+			<li>
+				<div class="flip">
+					<div class="card">
+						<div class="face front" data-bgcolor="#5C323E">
+							Front
+						</div>
+						<div class="face back">
+							Back
+						</div>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="flip">
+					<div class="card">
+						<div class="face front" data-bgcolor="#A82743">
+							Front
+						</div>
+						<div class="face back">
+							Back
+						</div>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="flip">
+					<div class="card">
+						<div class="face front" data-bgcolor="#E15E32">
+							Front
+						</div>
+						<div class="face back">
+							Back
+						</div>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="flip">
+					<div class="card">
+						<div class="face front" data-bgcolor="#C0D23E">
+							Front
+						</div>
+						<div class="face back">
+							Back
+						</div>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="flip">
+					<div class="card">
+						<div class="face front" data-bgcolor="#E5F04C">
+							Front
+						</div>
+						<div class="face back">
+							Back
+						</div>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="flip">
+					<div class="card">
+						<div class="face front" data-bgcolor="#C0D23E">
+							Front
+						</div>
+						<div class="face back">
+							Back
+						</div>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="flip">
+					<div class="card">
+						<div class="face front" data-bgcolor="#E15E32">
+							Front
+						</div>
+						<div class="face back">
+							Back
+						</div>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="flip">
+					<div class="card">
+						<div class="face front" data-bgcolor="#A82743">
+							Front
+						</div>
+						<div class="face back">
+							Back
+						</div>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="flip">
+					<div class="card">
+						<div class="face front" data-bgcolor="#5C323E">
+							Front
+						</div>
+						<div class="face back">
+							Back
+						</div>
+					</div>
+				</div>
+			</li>
+		</ul>
+
+</div>.
+
+</body>
+</html>
