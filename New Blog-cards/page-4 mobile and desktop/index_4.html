@@ -1,24 +1,43 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>index 4</title>
+  <title>Blog-4</title>
   <link rel="stylesheet" href="index4.css">
   <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 </head>
 <body>
+<script>
+// When the user scrolls the page, execute myFunction 
+window.onscroll = function() {myFunction()};
 
-<div id="myNav" class="overlay">
+function myFunction() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
+}
+</script>
+
+<video autoplay muted loop id="myVideo">
+  <source src="bg.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+
+<div class="header">
+  <div id="myNav" class="overlay">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   <div class="overlay-content">
-    <a href="#">About</a>
-    <a href="#">Services</a>
-    <a href="#">Clients</a>
-    <a href="#">Contact</a>
+  <a href="#">Home</a>
+    <a href="#">Technology</a>
+    <a href="#">Latest Trending</a>
+    <a href="#">Know About Us!</a>
+    <a href="#">Cricket</a>
+    <a href="#">Art Gallary</a>
   </div>
 </div>
 <div class="menu>"
-<span style="font-size:30px;cursor:pointer;color:red;position:fixed;margin-top:-170px;margin-left: 6px;z-index: 1" onclick="openNav()">&#9776; Menu</span>
+<span style="font-size:28px;cursor:pointer;color:red;position:fixed;margin-top:0px;margin-left: 6px;z-index:0;padding: 10px" onclick="openNav()">&#9776; Menu</span>
 </div>
 <script>
 function openNav() {
@@ -29,6 +48,14 @@ function closeNav() {
   document.getElementById("myNav").style.width = "0%";
 }
 </script>
+
+  <h2 style="font-size: 25px;" class="glow">Know About Us</h2>
+  <div class="progress-container">
+    <div class="progress-bar" id="myBar"></div>
+  </div>  
+</div>
+
+<div class="content">
 
 
 <div class="card">
@@ -49,7 +76,7 @@ function closeNav() {
     <li><i class="fa fa-envelope fa-2x"></i></li>
     <li><i class="fa fa-share-alt fa-2x"></i></li>
   </ul>
-  <div class="fab"><i class="fa fa-arrow-down fa-3x"> </i></div>
+  <div class="fab"><i class="fa fa-arrow-up fa-3x"> </i></div>
 </div>
 
 <div class="card">

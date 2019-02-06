@@ -3,6 +3,13 @@ body {
   background-color: lightyellow;
 }
 
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+}
 
 .overlay {
   height: 100%;
@@ -57,34 +64,74 @@ body {
   right: 35px;
   }
 }
+
+@media screen and (max-width: 450px) {
+  .menu{
+
+  }
+}
+
+
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  background-color:lightgreen;
+}
+
+.header h2 {
+  text-align: center;
+}
+
+.progress-container {
+  width: 100%;
+  height: 8px;
+  background: pink;
+}
+
+.progress-bar {
+  height: 8px;
+  background: #4caf50;
+  width: 0%;
+}
+
+.content {
+  padding: 100px 0;
+  margin: 50px auto 0 auto;
+  width: 80%;
+}
 /*PEN STYLES*/
 * {
   box-sizing: border-box;
 }
 .container{
-  margin-top: 30px;
-  padding: 20px;
+  margin-top: 0px;
+  padding: 0px;
 }
 
 .blog-card {
-  margin-top: 50px;
+ 
+  
   display: flex;
   flex-direction: column;
-  margin: 1rem auto;
-  box-shadow: 0 3px 7px -1px rgba(0, 0, 0, 0.1);
-  margin-bottom: 1.6%;
+  margin: 0.2rem auto;
+  box-shadow: 0 3px 7px -1px #ff4d4d;
+  margin-bottom: 3.6%;
   background: #fff;
-  line-height: 1.4;
+  line-height: 2.9;
   font-family: sans-serif;
   border-radius: 5px;
   overflow: hidden;
   z-index: 0;
+
+
 }
 .blog-card a {
-  color: inherit;
+  color: #33ccff;
 }
 .blog-card a:hover {
-  color: #5ad67d;
+  color: #5ad67d
 }
 .blog-card:hover .photo {
   -webkit-transform: scale(1.3) rotate(3deg);
@@ -120,11 +167,12 @@ body {
   left: -100%;
   margin: auto;
   transition: left .2s;
-  background: rgba(0, 0, 0, 0.6);
+  background:#ff00bf;
   color: #fff;
   padding: 10px;
   width: 100%;
-  font-size: .9rem;
+  font-size: 1.9rem;
+
 }
 .blog-card .details a {
   -webkit-text-decoration: dotted underline;
@@ -142,6 +190,7 @@ body {
   font-family: FontAwesome;
   margin-right: 10px;
   content: "\f133";
+
 }
 .blog-card .details .tags ul:before {
   font-family: FontAwesome;
@@ -159,6 +208,7 @@ body {
   background: #fff;
   position: relative;
   z-index: 0;
+
 }
 .blog-card .description h1,
 .blog-card .description h2 {
@@ -191,10 +241,12 @@ body {
   opacity: 0;
   vertical-align: middle;
   transition: margin .3s, opacity .3s;
+
 }
 .blog-card .description .read-more a:hover:after {
   margin-left: 5px;
   opacity: 1;
+
 }
 .blog-card p {
   position: relative;
@@ -251,4 +303,83 @@ body {
   .blog-card.alt .details {
     padding-left: 25px;
   }
+}
+
+/* footer    */
+
+footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color:white;
+   color: white;
+   text-align: center;
+   height: 50px;
+}
+
+.glow {
+  ;
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+.footer {
+   position: relative;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: red;
+   color: white;
+   text-align: center;
+   height: 100px;
+   }
+   .icons{
+   
+    font-size: 30px;
+
+   }
+  .icons .fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.icons .fa:hover {
+    opacity: 0.7;
+}
+
+.icons .fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.icons .fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.icons .fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.icons .fa-linkedin {
+  background: #007bb5;
+  color: white;
 }
