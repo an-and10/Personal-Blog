@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+}
+
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+ 
+.sidebar a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 700px;
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="sidebar">
+  <a class="active" href="#home">Home</a>
+    <a href="#cricket_blog.htm">Technical</a>
+    <a href="#contact">Gadgets</a>
+    <a href="#about">Know about us!</a>
+    <a href="#about">World-Cricket</a>
+    <a href="#about">Latest Trending</a>
+</div>
+
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+</style>
+<div class="content">
+ <h3> Conact us For your Article</h3>
+<div class="container">
+  <form action="/action_page.php">
+   
+  <form method="post" action="register.php">
+    <!--<?php include('errors.php'); ?>-->
+    <div class="input-group">
+      <label>Username</label>
+      <input type="text" name="username" value="<?php echo $username; ?>">
+    </div>
+    <div class="input-group">
+      <label>Email</label>
+      <input type="email" name="email" value="<?php echo $email; ?>">
+    </div>
+    <div class="input-group">
+      <label>Password</label>
+      <input type="password" name="password_1">
+    </div>
+    <div class="input-group">
+      <label>Confirm password</label>
+      <input type="password" name="password_2">
+    </div>
+    <div class="input-group">
+      <button type="submit" class="btn" name="reg_user">Register</button>
+    </div>
+    <p>
+      Already a member? <a href="login.php">Sign in</a>
+    </p>
+  </form>
+  </form>
+</div>
+
+
+
+</div>
+
+</body>
+</html>
