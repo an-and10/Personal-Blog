@@ -1,0 +1,596 @@
+
+    body{
+
+      background-color:#bbbbbb;
+    }
+
+    html {
+  scroll-behavior: smooth;
+}
+.request{
+  float:right;
+  margin:10px;
+
+}
+.item
+{
+  height: 50vh;
+}
+.carousel-image
+{
+  width: 100%;
+  height: 100%;
+}ṭ
+    textarea { resize:none; }
+
+    .navbar-brand *{
+
+    	color:red;
+    }
+
+    .jumbotron{
+
+    	height: 200px;
+    	margin-top:0px;
+    	background-color: ;
+    }
+
+    .jumbotron #details{
+    	position:absolute;
+    	color:white;
+    }
+
+    .jumbotron img{
+    	width:100%;
+    }
+
+
+
+    .popular{
+    	background-color:#222222;
+    	padding: 20px;
+    	border-radius: 10px;
+    	border: 3px solid black;
+      color:#5bc0de;
+
+    }
+    .popular h3{
+      color:white;
+      font-family: Times New Roman;
+    }
+
+
+    .popular h6{
+      color:#5bc0de;
+      font-family: Times New Roman;
+      font-size: 19px;
+    }
+
+
+    .popular p{
+      color:#d9d9d9;
+      font-family: Times New Roman;
+      font-size: 15px;
+    }
+
+
+
+
+
+
+    .popular img{
+    	width:100%;
+
+    	margin-top:0px;
+
+    }
+    section .widgets{
+    	margin-bottom:15px;
+
+    }
+    /* category  */
+
+    .popular ul li{
+    	list-style: none;
+    }
+
+    /* style for post */
+     .post{
+    background:white;
+    	color:black;
+      margin :15px 0px;
+      border-radius: 10px;
+    	/*border:1px solid black;
+    */
+    }
+    .post-date{
+    	padding: 20px;
+    	text-align: center;
+      text-decoration: bold;
+      font-style: bold;
+      font-family: 'Lato', sans-serif;
+
+    }
+    .post .post-date .day{
+    font-size: 20px;
+    color:blue;
+    text-decoration: bold;
+    }
+    .post .post-date .month{
+    font-size: 16px;
+    color:blue;
+    text-decoration: bold;
+    font-family: 'Lato',sans-serif;
+    }
+
+    .post .post-date .year{
+
+    font-weight: 100;
+    color:blue;
+    text-decoration: bold;
+    font-family: 'Lato';
+    }
+
+    .post .post-heading h3{
+
+      text-align: left;
+      margin-top: 50px;
+
+
+    }
+    .post .post-heading p{
+      color: #5bc0de;
+      text-align: right;
+      margin-right: 25px;
+
+    }
+    .post .post-heading span{
+      color:#050438
+    }
+
+    .post img{
+    	width: 100%;
+      margin-top: 0px;
+      height: 300px;
+
+
+    }
+
+    .post p .desc1{
+      margin:30px;
+      background: ;
+    }
+
+
+
+    nav#pagination{
+        text-align: center;
+
+    }
+    nav#pagination{
+        color:red;
+        font-size: 20px;
+    }
+
+    .author{
+        background-color: lightgreen;
+        padding:20px;
+        margin-bottom: 15px;
+    }
+    .author img{
+        width:100%;
+
+    }
+    .author p{
+        font-weight: 100;
+    }
+    .author h2{
+        color:red;
+        font-style: bold;
+        margin-top:-2px;
+
+    }
+
+    .comment  h4 {
+      color:white;
+      font-family: Times New Roman;
+      font-weight: 100;
+    }
+    .comment{
+        	background-color:#222222;
+          padding:10px;
+          border-radius: 10px;
+
+          margin-bottom:10px;
+           width:100%;
+    }
+
+    .comment img{
+        width:100%;
+    }
+
+    .comment p{
+        line-height: 20px;
+        font-weight: 100;
+    }
+    .comment .single-comment{
+        margin:10px;
+
+    }
+    .comment .single-comment img{
+       background:#5bc0de;
+    }
+    .comment .single-comment h5{
+        text-shadow: 10px;
+
+        color:white;
+    }
+
+    .comment .single-comment p{
+
+        color:#edefff;
+    }
+
+    .comment-box{
+      	background-color:#222222;
+        border-radius: 10px;
+        margin:5px;
+        padding:10px;
+
+    }
+    .comment-box h4{
+        color:white;
+        font-style: bold;
+        font-family:Times New Roman;
+
+    }
+    .form-group{
+        color: black;
+    }
+    .contact_us {
+      height: 150px;
+      width:100%;
+      background: #222222;
+      margin-top:-23px;
+      margin-bottom: 30px;
+
+
+    }
+    .contact_us  h2{
+      font-size: 40px;
+      margin-left: 40px;
+      color: white;
+    }
+
+    .contact_us  .container .small{
+      font-size: 20px;
+      margin-left: 20px;
+      color: blue;
+    }
+/*login*/
+
+    .login_us {
+      height: 150px;
+      width:100%;
+      background: #222222;
+      margin-top:-23px;
+      margin-bottom: 30px;
+
+
+    }
+    .login_us  h2{
+      font-size: 40px;
+      margin-left: 40px;
+      color: white;
+    }
+
+    .login_us  .container .small{
+      font-size: 20px;
+      margin-left: 30px;
+      color: blue;
+    }
+
+
+    @media (max-width:786px)
+    {
+        body{
+            background-color:#bbbbbb;
+        }
+        .item
+        {
+          height: 35vh;
+        }
+        .jumbotron #details{
+            margin-left:20px;
+        }
+         .post .post-heading{
+           margin-top: -20px;
+        }
+
+    .post img{
+    	width: 100%;
+      margin-top: 0px;
+      height:150px;
+
+
+    }
+    .post .bottom a{
+      color: red
+
+    }
+
+        .author{
+            background-color: light yellow;
+            text-align: center;
+        }
+        .author img{
+            width:30%;
+            text-align: center;
+        }
+        .author h2{
+            color: pink;
+            font-style: italic;
+            margin: 5px;
+        }
+        .related-post img{
+        width:  10%;
+        margin: 10px;
+
+        }
+        .comment{
+            background-color:#222222;
+            padding:10px;
+            margin-bottom:10px;
+
+        }
+        .comment img{
+            width:20%;
+            text-align: center;
+        }
+        .comment h5{
+            text-align-last: left;
+        }
+        .comment .single-comment{
+            text-align: left;
+        }
+        .contact_us {
+
+          margin-top:-40px;
+
+
+        }
+
+    }
+
+    .contact_us h3{
+      background-color:#222222;
+      color:#5bc0de;
+
+    }
+
+
+  .related-post  h5 {
+    color:#5bc0de;
+    font-family: Times New Roman;
+  }
+
+  .related-post h4{
+    color:white;
+    font-family: Times New Roman;
+  }
+    .related-post{
+      background-color:#222222;
+        padding:10px;
+      color:white;
+        margin-bottom:20px;
+        border-radius: 10px;
+        padding:20px;
+
+    }
+    .related-post img{
+        width:  90%;
+        margin: 10px;
+
+    }
+    .related-post h2{
+        color:olivedrab;
+    }
+
+
+    .box-design{
+        border:solid 1px black;
+        color:red;
+        background-color: aqua;
+
+    }
+
+    .box{
+        background: #ffffff;
+        margin: 0 0 30px;
+        border: solid 3px #e6e6e6;
+        box-sizing: border-box;
+        padding: 20px;
+        margin-top:25px;
+        height:610px;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, .3);
+
+
+    }
+
+    .btn-hover {
+        font-weight: normal;
+        color: #333333;
+        cursor: pointer;
+        background-color: inherit;
+        border-color: transparent;
+      }
+
+      .btn-hover-alt {
+        font-weight: normal;
+        color: #ffffff;
+        cursor: pointer;
+        background-color: inherit;
+        border-color: transparent;
+      }
+
+      /* navbar new */
+
+    .navbar-header .navbar-brand >img{
+      width:100%;
+      height:100px;
+
+    }
+
+
+
+
+
+    /*************************
+    EXAMPLES 2-7 BELOW
+    **************************/
+
+    /* EXAMPLE 2 (larger logo) - simply adjust top bottom padding to make logo larger */
+
+    .example2 .navbar-brand>img {
+      padding: 7px 15px;
+    }
+
+
+    /* EXAMPLE 3
+
+    line height is 20px by default so add 30px top and bottom to equal the new .navbar-brand 80px height  */
+
+    .example3 .navbar-brand {
+      height: 80px;
+    }
+
+    .example3 .nav >li >a {
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+    .example3 .navbar-toggle {
+      padding: 10px;
+      margin: 25px 15px 25px 0;
+    }
+
+
+    /* EXAMPLE 4 - Small Narrow Logo*/
+    .example4 .navbar-brand>img {
+      padding: 7px 14px;
+    }
+
+
+    /* EXAMPLE 5 - Logo with Text*/
+    .example5 .navbar-brand {
+      display: flex;
+      align-items: center;
+    }
+    .example5 .navbar-brand>img {
+      padding: 7px 14px;
+    }
+
+
+    /* EXAMPLE 6 - Background Logo*/
+    .example6 .navbar-brand{
+      background: url(https://res.cloudinary.com/candidbusiness/image/upload/v1455406304/dispute-bills-chicago.png) center / contain no-repeat;
+      width: 200px;
+    }
+
+
+
+
+
+    /* EXAMPLE 8 - Center on mobile*/
+        @media only screen and (max-width : 768px){
+      .example-8 .navbar-brand {
+      padding: 0px;
+      transform: translateX(-50%);
+      left: 50%;
+      position: absolute;
+    }
+    .example-8 .navbar-brand>img {
+      height: 100%;
+      width: auto;
+      padding: 7px 14px;
+    }
+    }
+
+
+    /* EXAMPLE 8 - Center Background */
+    .example-8 .navbar-brand {
+      background: url(https://res.cloudinary.com/candidbusiness/image/upload/v1455406304/dispute-bills-chicago.png) center / contain no-repeat;
+      width: 200px;
+      transform: translateX(-50%);
+      left: 50%;
+      position: absolute;
+    }
+
+
+
+
+
+    /* EXAMPLE 9 - Center with Flexbox and Text*/
+    .brand-centered {
+      display: flex;
+      justify-content: center;
+      position: absolute;
+      width: 100%;
+      left: 0;
+      top: 0;
+    }
+    .brand-centered .navbar-brand {
+      display: flex;
+      align-items: center;
+    }
+    .navbar-toggle {
+        z-index: 1;
+    }
+
+
+
+
+    /* CSS Transform Align Navbar Brand Text ... This could also be achieved with table / table-cells */
+    .navbar-alignit .navbar-header {
+          -webkit-transform-style: preserve-3d;
+      -moz-transform-style: preserve-3d;
+      transform-style: preserve-3d;
+
+    }
+    .navbar-alignit .navbar-brand {
+        top: 50%;
+        display: block;
+        position: relative;
+        height: auto;
+        transform: translate(0,-50%);
+        margin-right: 15px;
+      margin-left: 15px;
+    }
+
+
+
+
+
+    .navbar-nav>li>.dropdown-menu {
+        z-index: 9999;
+    }
+
+
+    #myBtn {
+      display: none;
+      position: fixed;
+      bottom: 20px;
+      right: 30px;
+      z-index: 99;
+      font-size: 18px;
+      border: none;
+      outline: none;
+      background-color:;
+      color: white;
+      cursor: pointer;
+      padding: 15px;
+      border-radius: 4px;
+    }
+
+    #myBtn:hover {
+      background-color: ;
+    }

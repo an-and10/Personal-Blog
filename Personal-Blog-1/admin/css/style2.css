@@ -1,0 +1,24 @@
+.sidebar{
+    margin-top: 10px;
+}
+.huge{
+    font-size: 40px;
+    
+}
+.tag-boxes .panel-primary{
+    border:soild 1px black; 
+}
+
+.panel-red{
+    color:red;
+}
+
+
+body{
+    margin-top: -30px;
+    font-size: 18px;
+}
+
+.navbar{
+    margin-bottom: 20px;
+}
